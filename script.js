@@ -16,3 +16,13 @@ function myFunction() {
     }
   }
 }
+
+function func(){
+	try {
+	var callLink = document.getElementById("callLink");
+	callLink.remove();
+	} catch {
+		var err = new Error;
+		alert(err)
+	}
+}

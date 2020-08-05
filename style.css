@@ -65,7 +65,16 @@ table {
 	text-align: center;
 }
 
-td:hover, th:hover {
+th:hover {
 	background-color: #00eaff;
 	color: white;
+}
+
+td:hover {
+	background-color: green;
+	color: white;
+}
+
+.corona {
+	background: greenyellow;
 }
