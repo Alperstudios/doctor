@@ -6,14 +6,15 @@
     <title>Doctor.com - The exclusive web that helps with illness and pains - Alperstudios</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/d81e02d07a.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <script src="script.js"></script>
 		<h1>Doctor.com</h1>
 		<h3>The exclusive web that helps with illness and pains</h3>
 		<div class="news-box">
-			<p>Corona strikes!</p>
-			<a href="https://www.google.com/search?rlz=1C5CHFA_enUS730US730&ei=YyAqX77MO5eltQaFhIeQCA&q=Coronavirus&oq=Coronavirus&gs_lcp=CgZwc3ktYWIQAzILCAAQsQMQgwEQkQIyBQgAEJECMgIIADIICAAQsQMQgwEyCAgAELEDEIMBMgUIABCxAzICCAAyCAgAELEDEIMBMgUIABCxAzICCAA6BAgAEEdQ0g1YyxVg_R5oAHABeACAAYECiAGNA5IBBTAuMS4xmAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwj-ifbliIPrAhWXUs0KHQXCAYIQ4dUDCAw&uact=5">For More Info</a>
+			<p>Corona strikes!   <i class="fas fa-viruses fa-spin fa-3x" style="color:green"></i></p>
+			<a href="https://www.google.com/search?rlz=1C5CHFA_enUS730US730&ei=YyAqX77MO5eltQaFhIeQCA&q=Coronavirus&oq=Coronavirus&gs_lcp=CgZwc3ktYWIQAzILCAAQsQMQgwEQkQIyBQgAEJECMgIIADIICAAQsQMQgwEyCAgAELEDEIMBMgUIABCxAzICCAAyCAgAELEDEIMBMgUIABCxAzICCAA6BAgAEEdQ0g1YyxVg_R5oAHABeACAAYECiAGNA5IBBTAuMS4xmAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwj-ifbliIPrAhWXUs0KHQXCAYIQ4dUDCAw&uact=5#kp-wp-tab-overview" target="blank">For More Info</a>
 		</div>
 		<h5>Search for Symptoms...</h5>
 		<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a symptom...">
@@ -35,8 +36,10 @@
 			<tr>
 				<th>Color ID</th>
 				<th>Virus/Bacteria Name</th>
+				<th>Disease Name</th>
+				<th>Nickname</th>
 				<th>Doctor.com ID</th>
-				<th>Contageousness Ratio<small><sup>*</sup></small></th>
+				<th><a href="https://www.npr.org/sections/health-shots/2014/10/02/352983774/no-seriously-how-contagious-is-ebola#storytext" target="blank">R<sub>0</sub></a></th>
 				<th>Status</th>
 				<th>Date Started (Officially)</th>
 				<th>Place of Origin</th>
@@ -46,28 +49,77 @@
 				<th>Deaths This Year</th>
 				<th>Recovered</th>
 				<th>Recovered This Year</th>
+				<th>Variations</th>
+				<th>Virus Family</th>
+				<th>Google Map Origin Place</th>
 			</tr>
 			<tr class="corona">
 				<td>Green Yellow</td>
-				<td>Novel Coronavirus/CoViD-19</td>
+				<td>Novel Coronavirus</td>
+				<td>CoViD-19 (SARS-COV-2)</td>
+				<td>the 'Rona</td>
 				<td>001</td>
-				<td>Min-1:2|Max-1:<a href="https://www.businessinsider.com/coronavirus-vs-flu-social-distancing-infections-spread-explainer-video-2020-3" target="blank">5900</a></td>
-				<td style="color:red">Active Pandemic</td>
+				<td>Min-1:2|Max-1:<a href="https://www.businessinsider.com/coronavirus-vs-flu-social-distancing-infections-spread-explainer-video-2020-3" target="blank">59000</a></td>
+				<td class="important">Active Pandemic</td>
 				<td>Dec. 31, 2019</td>
 				<td>Wuhan, China</td>
 				<td>Call 911 immediately
-				<a href="tel:911" style="color:red" id="callLink"><p style="background-color:#4d0000">Emergency!!! Call 911 Link</a></td>
+				<a href="tel:911" class="important" id="callLink"><p style="background-color:#4d0000">Emergency!!! Call 911 Link</a></td>
 				<td>18.6M</td>
 				<td colspan="2">701K</td>
 				<td colspan="2">11.2M</td>
+				<td>N/A</td>
+				<td>Coronaviridae</td>
+				<td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d973847.3549111419!2d114.0335825898373!3d30.762231153602816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x342eaef8dd85f26f%3A0x39c2c9ac6c582210!2sWuhan%2C%20Hubei%2C%20China!5e0!3m2!1sen!2sus!4v1596735130052!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="false" aria-hidden="false" tabindex="0"  class="shadow-corona"></iframe></td>
 			</tr>
 			<tr class="plague">
-
+				<td>Pink</td>
+				<td>Yersinia pestis</td>
+				<td>Plague</td>
+				<td>Black Death</td>
+				<td>002</td>
+				<td>N/A; Plague is from animals</td>
+				<td>Mostly inactive</td>
+				<td>Unknown; May be 3000 B.C. or 0 A.D</td>
+				<td>Unknown; Hypothesis is Asia/Europe</td>
+				<td>Antibiotics</td>
+				<td>Mean: 7/yr.</td>
+				<td>25M</td>
+				<td>Unknown; May be 4</td>
+				<td colspan="2">Unknown</td>
+				<td>N/A</td>
+				<td>Filoviridae</td>
+				<td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21828795.7191524!2d4.140758699674415!3d48.09773584437967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEurope!5e0!3m2!1sen!2sus!4v1596735297274!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="false" aria-hidden="false" tabindex="0" class="shadow-plague"></iframe></td>
+			</tr>
+			<tr class="marburg">
+				<td>Purple</td>
+				<td colspan="3">Marburg</td>
+				<td>003</td>
+				<td>N/A; Marburg is mostly from fleas</td>
+				<td>Mostly inactive</td>
+				<td>1967</td>
+				<td>Marburg, Frankfurt, Germany, Belgrade, Yugoslavia (now Serbia).</td>
+				<td>Get a diagnosis test</td>
+				<td>Unknown; May be none</td>
+				<td>~ 470</td>
+				<td>0</td>
+				<td colspan="2">Unkown</td>
+				<td>Marburg HF - Hemorrhagic Fever</td>
+				<td>Filoviridae</td>
+			</tr>
+			<tr class="ebola">
+				<td>Orange</td>
+				<td>Zaire Ebolavirus</td>
+				<td>Ebola</td>
+				<td>EBOV</td>
+				<td>004</td>
+				<td>~1:2</td>
+				<td class="important">Active</td>
+				<td>1976</td>
+				<td>Ebola River, DRC, Africa</td>
 			</tr>
 		</table>
 				<input onkeyup="func()" placeholder="Disable 911 Call Feature? Start typing to disable.">
 		<h6>Thank you to <a href="https://w3schools.com"><img src="https://www.w3schools.com/images/w3schoolscom_gray.gif" class="special-img"></a> and <a href="https://google.com"><img src="https://ssl.gstatic.com/images/branding/googleg/2x/googleg_standard_color_64dp.png"></a> for the search bar and info.</h6>
-		<br>
-		<h6>*How many people get sick from one person ratio</h6>
   </body>
 </html>
