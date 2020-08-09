@@ -23,6 +23,6 @@ function func(){
 	callLink.remove();
 	} catch {
 		var err = new Error;
-		alert(err)
+		// console.log(err)
 	}
 }

@@ -1,11 +1,12 @@
+/* @import's and *'s */
 @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@700&display=swap');
 
 * {
 	text-align: center;
 	font-family: 'Hind Vadodara', sans-serif;
-	/* overflow: scroll; */
 }
 
+/* The News */
 .news-box {
 	border-radius: 15px;
 	border: 1px solid black;
@@ -20,7 +21,7 @@
 	background-color: aqua;
 }
 
-/* Style the search box */
+/* The search engine part */
 #mySearch {
   width: 100%;
   font-size: 18px;
@@ -28,14 +29,12 @@
   border: 1px solid #ddd;
 }
 
-/* Style the navigation menu */
 #myMenu {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* Style the navigation links */
 #myMenu li a {
   padding: 12px;
   text-decoration: none;
@@ -45,6 +44,19 @@
 
 #myMenu li a:hover {
   background-color: #eee;
+}
+
+/* Universal Styles */
+#endnotes {
+	font-size: 0.1em;
+}
+
+.end {
+	font-size: 1.5rem !important;
+}
+
+ol {
+	list-style-type: square;
 }
 
 .important {
@@ -74,8 +86,17 @@ h6 {
 	font-size: 7.5px;
 }
 
+/* General table stylings */
 table {
 	text-align: center;
+}
+
+th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+	background-color: rgba(178, 255, 251, 0.6)
 }
 
 th:hover {
@@ -90,6 +111,7 @@ td:hover {
 	cursor: cell;
 }
 
+/* The rows in the table */
 .corona {
 	background: greenyellow;
 }
@@ -122,10 +144,48 @@ td:hover {
 	background-color: #ff7700;
 }
 
+.rabies td {
+	background-color: darkgray;
+}
+
+.rabies td:hover {
+	background-color: gray;
+	color: white;
+}
+
+/* The Google Maps iframe Box Shadow */
 .shadow-corona {
 	box-shadow: 10px 10px 10px #6ea31d;
 }
 
+.shadow-corona:hover {
+	box-shadow: 10px 10px 10px rgb(1, 66, 1);
+}
+
 .shadow-plague {
-	
+	box-shadow: 10px 10px 10px rgb(255, 130, 150);
+}
+
+.shadow-plague:hover {
+	box-shadow: 10px 10px 10px rgb(201, 47, 124);
+}
+
+.shadow-marburg {
+	box-shadow: 10px 10px 10px #7305b8;
+}
+
+.shadow-marburg:hover {
+	box-shadow: 10px 10px 10px rgb(49, 0, 49);
+}
+
+.ebola-shadow {
+	box-shadow: 10px 10px 10px rgb(168, 109, 0);
+}
+
+.ebola-shadow:hover {
+	box-shadow: 10px 10px 10px #a74e00;
+}
+
+.shadow-rabies {
+	box-shadow: 10px 10px 10px rgb(114, 114, 114);
 }
